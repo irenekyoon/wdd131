@@ -57,9 +57,9 @@ footer {
     font-family: var(--nav-font-family);
 }
 
-/* .navigation li { 
+/* .navigation li {
     flex: 1 1 auto;
- } */
+} */
 
 .navigation a {
     text-decoration: none;
