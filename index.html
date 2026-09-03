@@ -4,11 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – S. Irene Yoon</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals Home page for S. Irene Yoon">
+    <meta name="author" content="S. Irene Yoon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 | S Irene Yoon</h1>
+    <header><span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://ph.linkedin.com/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>S. Irene Yoon</h1>
+        <div class="cards">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-1">
+                    <div id="profile">
+                        <p id="profile-blurb">My name is S. Irene Yoon. I currently live in the Philippines, having
+                            moved here from Seoul,
+                            South Korea.
+                            I love baking without a recipe, and spending time with my husband.</p>
+                        <img id="profile-photo" src="images/profile-photo.jpg" alt="Irene Yoon profile photo">
+                    </div>
+                    <div id="philippines">
+                        <p id="manila">Manila, Philippines</p>
+                        <figure><img id="flag" src="images/philippines-flag.jpg" alt="Flag of the Philippines">
+                            <figcaption>Flag of the Philippines</figcaption>
+                        </figure>
+                        <p id="manila-blurb">The Philippines is a country comprised of a lot of islands - over 7000
+                            islands! They also have
+                            one of
+                            the
+                            highest number of members in the Chursh of Jesus Christ of Latter-day Saints - over 900,000.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <div class="card-2">
+                    <ul id="resource-list">
+                        <li><a href="https://dev.to/">Dev.to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com/">W# Schools</a></l>
+                        <li><a
+                                href="https://www.udemy.com/?utm_campaign=Brand_Direct_la.EN_cc.ROW&utm_source=google&utm_medium=paid-search&portfolio=BrandDirect&utm_audience=mx&utm_tactic=brand&utm_term=_._ag_193516349942_._ad_808143649589_._kw_udemy&utm_content=g&funnel=&test=&campaignid=23822241327&adgroupid=193516349942&device=c&keyword=udemy&matchtype=e&network=g&devicemodel=&creativeid=808143649589&assetgroupid=&targetid=kwd-310556426868&extensionid=&placement=&gad_source=1&gad_campaignid=23822241327&gbraid=0AAAAADROdO1bFm_h8p0B7TsdBRgareKa-&gclid=Cj0KCQjw79nUBhCgARIsADSHka1a_AqEiB-UGmDEfuOQcmbC449It7NRp1WjKJJftCkLMKGJ2iHJ9usaApwWEALw_wcB">Udemy</a>
+                        </li>
+                        <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified">Last modified:</p>
+    </footer>
 </body>
 
 </html>
