@@ -3,7 +3,7 @@
     --sap-grey: 89, 85, 98;
     --chocolate: 49, 38, 30;
     /* --subdued-brown: 104, 93, 72; */
-    --pale-green: 203, 221, 168;
+    /* --pale-green: 203, 221, 168; */
     --light-mocha: 239, 201, 171;
     --subdued-pink: 236, 177, 168;
 
@@ -32,9 +32,12 @@ footer {
 
 }
 
-footer {
-    background-color: rgb(var(--subdued-pink));
-    color: var(--black);
+header {
+    font-size: 20px;
+}
+
+main {
+    color: rgb(var(--black));
 }
 
 #course-title {
@@ -42,7 +45,7 @@ footer {
     padding: 10px;
     text-align: center;
     display: block;
-    background-color: rgb(var(--light-mocha));
+    background-color: rgb(var(--subdued-pink));
     color: var(--black);
 
 }
@@ -81,13 +84,13 @@ footer {
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
+    justify-items: center;
+    justify-content: center;
 }
 
 h1,
 h2 {
     text-align: center;
-
 }
 
 h1 {
@@ -97,11 +100,11 @@ h1 {
     font-family: var(--name-font-family);
 }
 
-h2 {
-    padding: 5px;
+.card h2 {
+    padding: 7px;
     font-size: 15px;
     font-family: var(--nav-font);
-    background-color: rgb(var(--pale-green));
+    background-color: rgb(var(--light-mocha));
 }
 
 p,
@@ -111,11 +114,10 @@ p,
 
 .card {
     border: 2px, solid, rgb(var(--sap-grey), .5);
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 5px;
-    margin: 7px;
     box-shadow: 5px 5px 30px rgb(5 5 5 / .3);
-
+    max-width: 420px;
 }
 
 .card-1 {
@@ -137,28 +139,26 @@ p,
 
 #philippines {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* justify-content: left;
-    justify-items: center; */
+    grid-template-columns: 100px 1fr;
+    justify-content: left;
     justify-items: center;
+    justify-items: start;
+    max-width: 380px;
+
 
 }
-
-
 
 #manila {
     grid-column: 1/3;
     grid-row: 1/2;
     text-align: center;
     padding: 0 100px;
-    border-bottom: 5px solid rgb(var(--pale-green));
+    border-bottom: 5px solid rgb(var(--light-mocha));
 }
 
 #flag {
     max-width: 100px;
     padding: 7px;
-
-
 }
 
 figure {
@@ -185,9 +185,9 @@ figcaption {
     list-style: circle;
     padding: 35px;
     margin: 20px;
-    border: 2px, solid, rgb(var(--subdued-pink), .3);
-    box-shadow: .5px .2px 5px rgb(5 5 5 / .3);
-    border-radius: 5px;
+    /* border: 2px, solid, rgb(var(--subdued-pink), .3); */
+    /* box-shadow: .5px .2px 5px rgb(5 5 5 / .3); */
+    /* border-radius: 5px; */
 }
 
 #resource-list li {
@@ -197,8 +197,8 @@ figcaption {
 
 #resource-list a {
     text-decoration: none;
-    padding: 20px;
-    margin: 10px;
+    padding: 20px 20px 20px 0px;
+
 
 }
 
@@ -207,4 +207,6 @@ footer {
     padding: 15px;
     text-align: center;
     font-family: var(--alt-font-family);
+    background-color: rgb(var(--subdued-pink));
+    color: var(--black);
 }
