@@ -4,7 +4,7 @@
     --chocolate: 49, 38, 30;
     /* --subdued-brown: 104, 93, 72; */
     /* --pale-green: 203, 221, 168; */
-    --light-mocha: 239, 201, 171;
+    --alt-pink: 250, 188, 176;
     --subdued-pink: 236, 177, 168;
 
 
@@ -104,7 +104,7 @@ h1 {
     padding: 7px;
     font-size: 15px;
     font-family: var(--nav-font);
-    background-color: rgb(var(--light-mocha));
+    background-color: rgb(var(--alt-pink), .7);
 }
 
 p,
@@ -153,7 +153,7 @@ p,
     grid-row: 1/2;
     text-align: center;
     padding: 0 100px;
-    border-bottom: 5px solid rgb(var(--light-mocha));
+    border-bottom: 5px solid rgb(var(--alt-pink), .5);
 }
 
 #flag {
