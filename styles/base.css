@@ -36,8 +36,10 @@ header {
     font-size: 20px;
 }
 
-main {
-    color: rgb(var(--black));
+main,
+#course-title,
+footer {
+    color: var(--black);
 }
 
 #course-title {
@@ -46,8 +48,6 @@ main {
     text-align: center;
     display: block;
     background-color: rgb(var(--subdued-pink));
-    color: var(--black);
-
 }
 
 .navigation {
@@ -208,5 +208,4 @@ footer {
     text-align: center;
     font-family: var(--alt-font-family);
     background-color: rgb(var(--subdued-pink));
-    color: var(--black);
 }
