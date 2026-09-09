@@ -34,12 +34,17 @@ footer {
 
 header {
     font-size: 20px;
+    margin-bottom: 5px;
 }
 
 main,
 #course-title,
 footer {
     color: var(--black);
+}
+
+main {
+    border: 2px solid rgb(var(--sap-grey), .2);
 }
 
 #course-title {
@@ -142,7 +147,7 @@ p,
     grid-template-columns: 100px 1fr;
     justify-content: left;
     justify-items: center;
-    justify-items: start;
+    /* justify-items: start; */
     max-width: 380px;
 
 
