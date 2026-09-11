@@ -125,7 +125,7 @@ h1 {
 }
 
 .grid img {
-    max-width: 255px;
+    width: 255px;
     padding: 5px;
     box-shadow: 4px 10px 15px rgb(var(--grey), .5);
 }
