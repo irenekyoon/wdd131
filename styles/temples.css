@@ -43,14 +43,14 @@ footer p {
 }
 
 header p {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 600;
 
     margin: 0 auto 0 0;
 }
 
 #hamburger {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgb(var(--white));
     background: none;
     position: fixed;
@@ -71,12 +71,14 @@ header p {
 .navigation {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     list-style: none;
 }
 
 
 ul li {
     list-style: none;
+
 }
 
 .navigation a {
@@ -85,7 +87,7 @@ ul li {
     padding: 5px;
     /* border-radius: 4px; */
     font-family: var(--nono-font);
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     /* background-color: rgb(var(--grey)); */
     color: rgb(var(--white));
@@ -114,7 +116,7 @@ main {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     padding: 7px;
 }
@@ -146,4 +148,8 @@ figcaption {
 footer {
     text-align: center;
     margin-top: 10px;
+}
+
+footer p {
+    font-size: .8rem;
 }
