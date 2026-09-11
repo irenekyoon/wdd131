@@ -1,0 +1,15 @@
+@media screen and (min-width: 500px) {
+
+    #hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: inline-flex;
+    }
+}
