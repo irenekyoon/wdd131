@@ -126,6 +126,7 @@ h1 {
 
 .grid img {
     width: 255px;
+    height: 170px;
     padding: 5px;
     box-shadow: 4px 10px 15px rgb(var(--grey), .5);
 }
