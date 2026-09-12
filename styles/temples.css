@@ -45,7 +45,6 @@ footer p {
 header p {
     font-size: 1.2rem;
     font-weight: 600;
-
     margin: 0 auto 0 0;
 }
 
@@ -60,22 +59,20 @@ header p {
 
 #hamburger::before {
     content: "☰";
-
 }
 
 #hamburger.open::before {
     content: "x";
 }
 
-
-.navigation {
+nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     list-style: none;
 }
 
-.navigation a {
+nav a {
     display: none;
     text-align: center;
     padding: 5px;
@@ -88,7 +85,7 @@ header p {
     margin: 5px;
 }
 
-.navigation a:hover {
+nav a:hover {
     color: rgb(var(--taupe));
 }
 
