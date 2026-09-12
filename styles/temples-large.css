@@ -4,12 +4,21 @@
         display: none;
     }
 
-    .navigation {
+    nav {
         display: flex;
         flex-direction: row;
     }
 
-    .navigation a {
-        display: inline-flex;
+    nav ul {
+        display: flex;
+        flex-direction: row;
     }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%
+    }
+
+
+
 }
