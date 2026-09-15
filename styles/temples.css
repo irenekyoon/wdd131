@@ -34,6 +34,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
+    border-bottom: 5px solid white;
 }
 
 header p,
@@ -45,7 +46,7 @@ footer p {
 header p {
     font-size: 1.2rem;
     font-weight: 600;
-
+    padding: 5px;
     margin: 0 auto 0 0;
 }
 
@@ -71,29 +72,31 @@ header p {
 nav {
     display: flex;
     flex-direction: column;
+    padding: 5px;
     /* justify-content: flex-end; */
 }
 
 nav ul {
     max-width: 300px;
     display: none;
+    padding: 5px;
+    margin: 5px;
+
 }
 
 nav ul li {
     list-style: none;
+    padding: 5px;
 
 }
 
 nav a {
     text-align: center;
-    padding: 5px;
-
     font-family: var(--nono-font);
     font-size: 1rem;
     text-decoration: none;
 
     color: rgb(var(--white));
-    margin: 5px;
 }
 
 nav a:hover {
