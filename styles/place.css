@@ -1,0 +1,150 @@
+:root {
+    --med-green: 114, 150, 54;
+    --olive-green: 72, 90, 2;
+    --orange: 230, 148, 27;
+    --taupe: 229, 192, 150;
+    --font-family: "Lato", sans-serif;
+    --font-family-footer: Verdana;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+}
+
+header,
+main,
+footer {
+    padding: 5px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: rgb(var(--olive-green));
+    color: #ffffff;
+}
+
+header {
+    border-bottom: 7px solid rgb(var(--orange));
+    height: 5em;
+}
+
+/* main { */
+/* border: 2px solid rgb(var(--med-green)); */
+/* } */
+
+h1,
+h2 {
+    font-family: var(--font-family);
+    text-align: center;
+
+}
+
+h1 {
+    font-weight: 700;
+    margin-top: 11px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+section {
+    max-width: 400px;
+    margin: 20px;
+    font-size: larger;
+
+}
+
+table {
+    margin: 0 auto;
+    padding: 10px;
+    font-family: var(--font-family);
+}
+
+#weather-svg {
+    max-width: 50px;
+    margin: 0 auto 0 8em;
+}
+
+.first-col {
+    text-align: right;
+}
+
+table td {
+    padding: .1em;
+}
+
+footer {
+    padding: 20px;
+    font-family: var(--font-family-footer);
+    text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 500px) {
+    img {
+        display: relative;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .grid {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #weather-icon::after {
+        content: "☀️";
+    }
+
+    #weather-svg {
+        display: none;
+    }
+
+    #left-section,
+    #right-section {
+        padding-top: 42px;
+        position: relative;
+        background-color: rgb(var(--taupe), .8);
+    }
+
+    #left-section {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #right-section {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        justify-self: end;
+    }
+
+    section h2 {
+        position: absolute;
+        background-color: rgb(var(--med-green), .7);
+        color: black;
+        padding: 5px 20px;
+        text-align: left;
+        display: inline;
+        top: 8px;
+        left: -10px;
+    }
+}

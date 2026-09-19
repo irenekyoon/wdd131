@@ -9,6 +9,9 @@
     <meta name="author" content="Sunyoung Irene Yoon">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/place.js" defer></script>
 
 </head>
@@ -19,12 +22,93 @@
     </header>
     <main>
         <picture>
-            <source srcset="images/fruit-seller.jpg" media="(min-width:1000px)">
-            <source srcset="images/fruit-seller.jpg" media="(min-width:500px)">
-            <img src="images/fruit.jpg" alt="fruit at a fruitstand in the Philippines" width="400">
+            <source srcset="images/fruit-seller-lrg.webp" media="(min-width:1000px)">
+            <source srcset="images/fruit-seller-med.webp" media="(min-width:500px)">
+            <img src="images/fruit-seller-sm.webp" alt="fruit at a fruitstand in the Philippines" width="400">
         </picture>
+        <div class="grid">
+            <section id="left-section">
+                <h2>Data</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="first-col"><strong>Area:</strong> </td>
+                            <td>298,170 km2</td>
+
+                        </tr>
+                        <tr>
+                            <td class="first-col"><strong>Population: </strong></td>
+                            <td>117.9 million</td>
+                        </tr>
+                        <tr>
+                            <td class="first-col"><strong>Capital: </strong></td>
+                            <td>Manila</td>
+                        </tr>
+                        <tr>
+                            <td class="first-col"><strong>Languages:</strong></td>
+                            <td>Filipino/Tagalog, English</td>
+                        </tr>
+                        <tr>
+                            <td class="first-col"><strong>Currency: </strong></td>
+                            <td>Philippine peso</td>
+                        </tr>
+                        <tr>
+                            <td class="first-col"><strong>Time Zone: </strong></td>
+                            <td>UTC+8</td>
+                        </tr>
+                        <tr>
+                            <td class="first-col"><strong>Calling Code: </strong></td>
+                            <td>+63</td>
+                        </tr>
+                        <tr>
+                            <td class="first-col"><strong>Internet TLD:</strong></td>
+                            <td>.ph</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+            <section id="right-section">
+                <h2 id="weather-icon">Weather</h2>
+                <img id="weather-svg" src="images/sunny.svg" alt="icon of sun brightly shining"></h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="first-col"><strong>Temperature: </strong></td>
+                            <td id="temp">29° C</td>
+                        </tr>
+                        <tr>
+                            <td class="first-col"><strong>Conditions: </strong></td>
+                            <td>Partly Sunny</td>
+                        </tr>
+                        <tr>
+                            <td class="first-col"><strong>Wind: </strong></td>
+                            <td id="wspeed">5 km/h</td>
+                        </tr>
+                        <tr>
+                            <td class="first-col"><strong>Wind Chill:</strong></td>
+                            <td id="wind-chill"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p id="currentyear"></p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
