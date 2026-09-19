@@ -58,12 +58,12 @@ img {
 
 }
 
-section {
-    max-width: 400px;
+/* section {
+
     margin: 20px;
     font-size: larger;
 
-}
+} */
 
 table {
     margin: 0 auto;
@@ -94,23 +94,6 @@ footer {
 
 
 @media screen and (min-width: 500px) {
-    img {
-        display: relative;
-    }
-
-    main {
-        position: relative;
-    }
-
-    .grid {
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
     #weather-icon::after {
         content: "☀️";
     }
@@ -119,22 +102,25 @@ footer {
         display: none;
     }
 
+    img {
+        position: relative;
+    }
+
     #left-section,
     #right-section {
+        position: absolute;
         padding-top: 42px;
-        position: relative;
         background-color: rgb(var(--taupe), .8);
     }
 
     #left-section {
-        grid-column: 1/2;
-        grid-row: 1/2;
+        top: 95px;
+        left: 20px;
     }
 
     #right-section {
-        grid-column: 3/4;
-        grid-row: 2/3;
-        justify-self: end;
+        bottom: 5px;
+        right: 20px;
     }
 
     section h2 {
