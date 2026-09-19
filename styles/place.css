@@ -40,7 +40,8 @@ header {
 /* } */
 
 h1,
-h2 {
+h2,
+table {
     font-family: var(--font-family);
     text-align: center;
 
@@ -68,7 +69,6 @@ img {
 table {
     margin: 0 auto;
     padding: 10px;
-    font-family: var(--font-family);
 }
 
 #weather-svg {
