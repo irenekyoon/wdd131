@@ -1,0 +1,60 @@
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header,
+main,
+footer {
+    /* margin: 0 auto; */
+    text-align: center;
+    background-color: rgb(200, 244, 250, .4);
+
+}
+
+h1,
+footer {
+    font-family: 'Lucida Sans Unicode';
+    padding: 5px;
+}
+
+h2,
+thead,
+td {
+    font-family: 'Lucida Sans Regular';
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    /* width: 100%; */
+    border: 2px solid rgb(20, 100, 200, .7);
+
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(20, 40, 50, .2);
+}
+
+caption {
+    caption-side: top;
+    font-family: 'Lucida Grande', sans-serif;
+}
+
+thead {
+    background-color: rgb(2, 5, 250, .9);
+    color: white;
+
+}
+
+th {
+    padding: 15px 22px;
+}
+
+td {
+    padding: 10px 22px;
+}
+
+tbody tr:hover {
+    background-color: rgb(20, 250, 100, .5);
+}

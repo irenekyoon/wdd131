@@ -1,0 +1,192 @@
+:root {
+    --nono-font: "Noto Sans", sans-serif;
+    --raleway-font: "Raleway", sans-serif;
+
+    --dark-choc: 5, 5, 70;
+    --taupe: 226, 197, 140;
+    --grey: 120, 120, 120;
+    --white: 252, 252, 252;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+header,
+footer {
+    background-color: rgb(var(--dark-choc));
+    color: rgb(var(--white));
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    border-bottom: 5px solid white;
+}
+
+header p,
+h1,
+h2,
+footer p {
+    font-family: var(--raleway-font);
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 5px;
+    margin: 0 auto 0 0;
+}
+
+#hamburger {
+    font-size: 1rem;
+    color: rgb(var(--white));
+    background: none;
+    position: fixed;
+    top: 1rem;
+    right: .5rem;
+}
+
+#hamburger::before {
+    content: "☰";
+
+}
+
+#hamburger.open::before {
+    content: "x";
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    /* justify-content: flex-end; */
+}
+
+nav ul {
+    max-width: 300px;
+    display: none;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 5px;
+
+}
+
+nav a {
+    text-align: center;
+    font-family: var(--nono-font);
+    font-size: 1rem;
+    text-decoration: none;
+
+    color: rgb(var(--white));
+}
+
+nav a:hover {
+    color: rgb(var(--taupe));
+}
+
+.open ul {
+    display: block;
+    text-align: center;
+
+}
+
+.active::before {
+    content: "[";
+}
+
+.active::after {
+    content: "]"
+}
+
+main {
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 7px;
+}
+
+
+
+#grid {
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    grid-gap: 10px;
+    background-color: rgb(var(--white));
+    max-width: 860px;
+}
+
+section {
+    background: rgb(var(--grey), .3);
+    padding: 7px 6px 6px;
+    border-radius: 5px;
+
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 4px;
+
+}
+
+section p {
+    font-family: var(--nono-font);
+    font-size: .9em;
+}
+
+main div img {
+    width: 90%;
+    height: auto;
+    padding: 5px;
+    margin: 5px 0 0;
+    box-shadow: 4px 10px 15px rgb(var(--grey), .5);
+    background: white;
+    animation: fade 3s;
+}
+
+@keyframes fade {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer p {
+    font-size: .8rem;
+}
