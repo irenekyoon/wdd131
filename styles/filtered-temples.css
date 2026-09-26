@@ -69,7 +69,6 @@ header p {
     content: "x";
 }
 
-
 nav {
     display: flex;
     flex-direction: column;
@@ -129,8 +128,6 @@ h1 {
     padding: 7px;
 }
 
-
-
 #grid {
     text-align: center;
     margin: 0 auto;
@@ -178,8 +175,6 @@ main div img {
         opacity: 1;
     }
 }
-
-
 
 footer {
     text-align: center;

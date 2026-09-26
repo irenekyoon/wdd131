@@ -109,6 +109,11 @@ const temples = [
 
 createTempleCard(temples);
 
+// const newLink = document.querySelector("#new");
+// newLink.addEventListener("click", () => {
+//     createTempleCard(temples.filter(temple => temples.dedicated > 2000));
+// })
+
 const smallLink = document.querySelector("#small");
 smallLink.addEventListener("click", () => {
     // createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
@@ -125,6 +130,13 @@ const homeLink = document.querySelector("#home");
 homeLink.addEventListener("click", () => {
     createTempleCard(temples);
 });
+
+// const old = document.getElementById("old");
+// old.addEventListener("click", () => {
+//     const templeYear = temples.dedicated.map((temYear) => temYear.split(",")[0]);
+
+//     createTempleCard((temples.filter(temple => templeYear < 1900)));
+// });
 
 function createTempleCard(filteredTemples) {
     document.getElementById("grid").innerHTML = "";
