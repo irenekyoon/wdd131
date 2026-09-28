@@ -126,6 +126,20 @@ largeLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.area > 90000));
 });
 
+const oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", () => {
+    // createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
+    createTempleCard(temples.filter(temple => temple.dedicated["0"] < "1900"));
+});
+
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+    let templeYear = temple.dedicated[0].split(",");
+    // console.log(templeYear);
+    // createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
+    createTempleCard(temples.filter(temple => templeYear > 2000));
+});
+
 const homeLink = document.querySelector("#home");
 homeLink.addEventListener("click", () => {
     createTempleCard(temples);
