@@ -109,13 +109,20 @@ const temples = [
 
 createTempleCard(temples);
 
+// const newLink = document.querySelector("#new");
+// newLink.addEventListener("click", () => {
+//     createTempleCard(temples.filter(temple => temples.dedicated > 2000));
+// })
+
 const smallLink = document.querySelector("#small");
 smallLink.addEventListener("click", () => {
+    // createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
     createTempleCard(temples.filter(temple => temple.area < 10000));
 });
 
 const largeLink = document.querySelector("#large");
 largeLink.addEventListener("click", () => {
+    // createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
     createTempleCard(temples.filter(temple => temple.area > 90000));
 });
 
@@ -124,31 +131,41 @@ homeLink.addEventListener("click", () => {
     createTempleCard(temples);
 });
 
+const oldLink = document.getElementById("old");
+oldLink.addEventListener("click", () => {
+    createTempleCard((temples.filter(temple => parseInt(temple.dedicated) < 1900)));
+});
+
+const newLink = document.getElementById("new");
+newLink.addEventListener("click", () => {
+    createTempleCard((temples.filter(temple => parseInt(temple.dedicated) > 2000)));
+});
+
 function createTempleCard(filteredTemples) {
     document.getElementById("grid").innerHTML = "";
     filteredTemples.forEach(temple => {
         let card = document.createElement("section");
+        let img = document.createElement("img");
         let name = document.createElement("h2");
         let location = document.createElement("p");
         let dedication = document.createElement("p");
         let area = document.createElement("p");
-        let img = document.createElement("img");
 
         name.textContent = `${temple.templeName}`;
-        location.textContent = `${temple.location}`;
-        dedication.textContent = `${temple.dedicated}`;
-        area.textContent = `${temple.area} sq ft`;
+        location.textContent = `Location: ${temple.location}`;
+        dedication.textContent = `Dedicated: ${temple.dedicated}`;
+        area.textContent = `Area: ${temple.area} sq ft`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple of the Church of Jesus Christ of Latter-day Saints`);
         img.setAttribute("loading", "lazy");
         img.setAttribute("width", "400");
         img.setAttribute("height", "600");
 
+        card.appendChild(img);
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedication);
         card.appendChild(area);
-        card.appendChild(img);
 
         document.querySelector("#grid").append(card);
 

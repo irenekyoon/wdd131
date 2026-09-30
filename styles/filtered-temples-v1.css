@@ -2,11 +2,10 @@
     --nono-font: "Noto Sans", sans-serif;
     --raleway-font: "Raleway", sans-serif;
 
-    --dark-blue: 5, 5, 70;
+    --dark-choc: 5, 5, 70;
     --taupe: 226, 197, 140;
     --grey: 120, 120, 120;
     --white: 252, 252, 252;
-    --off-white: 242, 242, 242;
 }
 
 * {
@@ -18,14 +17,14 @@
 header,
 main,
 footer {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
 
 }
 
 header,
 footer {
-    background-color: rgb(var(--dark-blue));
+    background-color: rgb(var(--dark-choc));
     color: rgb(var(--white));
     padding: 20px;
 }
@@ -36,7 +35,6 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     border-bottom: 5px solid white;
-    justify-content: space-around;
 }
 
 header p,
@@ -60,17 +58,11 @@ header p {
     position: fixed;
     top: 1rem;
     right: .5rem;
-
-}
-
-#hamburger::before,
-#hamburger.open::before {
-    width: 20px;
-    height: auto;
 }
 
 #hamburger::before {
     content: "☰";
+
 }
 
 #hamburger.open::before {
@@ -81,6 +73,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 5px;
+    /* justify-content: flex-end; */
 }
 
 nav ul {
@@ -127,7 +120,6 @@ nav a:hover {
 main {
     padding: 0px 0px 0px 10px;
     margin-bottom: 10px;
-    background-color: rgb(var(--off-white), .3);
 }
 
 h1 {
@@ -137,47 +129,39 @@ h1 {
 }
 
 #grid {
+    text-align: center;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 15px;
-    justify-items: center;
-    background-color: rgb(var(--off-white));
-    border-radius: 3px;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    grid-gap: 10px;
+    background-color: rgb(var(--white));
+    max-width: 860px;
 }
 
 section {
-    text-align: center;
     background: rgb(var(--grey), .3);
     padding: 7px 6px 6px;
-    margin: 10px 0;
     border-radius: 5px;
-    max-width: 300px;
-    height: auto;
+
 }
 
 h2 {
-    text-align: center;
     font-size: 1.2em;
-    font-weight: 900;
-    margin: 6px 4px 5px;
-    color: rgb(var(--dark-blue));
+    margin: 5px 4px 4px;
 }
 
 section p {
     font-family: var(--nono-font);
     font-size: .8em;
-    margin: 0 20px;
-    text-align: left;
+
 }
 
 main div img {
-    width: 95%;
+    width: 90%;
     height: auto;
     margin: 5px 0 0;
     box-shadow: 3px 3px 20px 2px rgb(var(--grey), .8);
-    animation: fade .3s;
+    animation: fade 2s;
     border-radius: 6px;
 }
 

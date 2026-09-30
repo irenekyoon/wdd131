@@ -109,48 +109,20 @@ const temples = [
 
 createTempleCard(temples);
 
-// const newLink = document.querySelector("#new");
-// newLink.addEventListener("click", () => {
-//     createTempleCard(temples.filter(temple => temples.dedicated > 2000));
-// })
-
 const smallLink = document.querySelector("#small");
 smallLink.addEventListener("click", () => {
-    // createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
     createTempleCard(temples.filter(temple => temple.area < 10000));
 });
 
 const largeLink = document.querySelector("#large");
 largeLink.addEventListener("click", () => {
-    // createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
     createTempleCard(temples.filter(temple => temple.area > 90000));
-});
-
-const oldLink = document.querySelector("#old");
-oldLink.addEventListener("click", () => {
-    // createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
-    createTempleCard(temples.filter(temple => temple.dedicated["0"] < "1900"));
-});
-
-const newLink = document.querySelector("#new");
-newLink.addEventListener("click", () => {
-    let templeYear = temple.dedicated[0].split(",");
-    // console.log(templeYear);
-    // createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
-    createTempleCard(temples.filter(temple => templeYear > 2000));
 });
 
 const homeLink = document.querySelector("#home");
 homeLink.addEventListener("click", () => {
     createTempleCard(temples);
 });
-
-// const old = document.getElementById("old");
-// old.addEventListener("click", () => {
-//     const templeYear = temples.dedicated.map((temYear) => temYear.split(",")[0]);
-
-//     createTempleCard((temples.filter(temple => templeYear < 1900)));
-// });
 
 function createTempleCard(filteredTemples) {
     document.getElementById("grid").innerHTML = "";
