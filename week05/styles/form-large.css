@@ -1,0 +1,16 @@
+@media screen and (min-width: 500px) {
+
+
+    header,
+    main,
+    footer {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* #pForm {
+
+       
+
+    } */
+}

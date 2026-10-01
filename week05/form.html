@@ -8,13 +8,57 @@
     <meta name="description" content="WDD131 | Week 05: An example of a product review form for various widgets.">
     <meta name="author" content="Sunyoung Irene Yoon">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
     <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" id="pForm">
+            <label>Product Name
+                <select class="required" name="productName" id="productName" required>
+                    <option value="" selected disabled>Select a Product...</option>
+                </select>
+            </label>
+
+            <div class="description">Overall Rating</div>
+            <div id="flexStars">
+                <label>&star; &star; &star; &star;
+                    &star;<input type="radio" id="stars" name="stars" value="5" required></label>
+                <label>&star;&star; &star;
+                    &star;<input type="radio" id="stars" name="stars" value="4" required></label>
+                <label>&star; &star; &star;<input type="radio" id="stars" name="stars" value="3" required></label>
+                <label>&star; &star;<input type="radio" id="stars" name="stars" value="2" required></label>
+                <label>&star;<input type="radio" id="stars" name="stars" value="1" required></label>
+
+            </div>
+
+            <label>Date<input type="date" id="date" name="date" required>
+            </label>
+
+            <div class="description">Useful Features</div>
+            <div id="features">
+                <label><input type="checkbox" id="design" name="client" value="yes">Design</label>
+                <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="process" value="yes">Performance</label>
+
+            </div>
+
+            <label class="description">Written Review (Optional)<input type="textarea" name="writtenReview"></label>
+            <label class="description">Your Name (Optional)<input type="text" name="name"></label>
+
+            <input class="submit" type="submit" value="Post Review">
+
+        </form>
+    </main>
+    <footer>
+        <p id="contentYear"></p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
