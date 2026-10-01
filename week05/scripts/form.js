@@ -50,35 +50,10 @@ if (numReviews == 0) {
     displayReviews.textContent = `This is your first review!`;
 
 } else {
-    displayReviews.textContent = ` You've completed ${numReviews} reviews! 🥰`;
+    displayReviews.textContent = ` You've completed ${numReviews} reviews!`;
 }
 
 numVisits++;
 
 localStorage.setItem("numReviews-ls", numReviews);
 
-// if (numReviews !== 0) {
-//     displayReviews.innerHTML = `${numReviews}`;
-// }
-// else {
-//     displayReviews.innerHTML = `This is your first review!`;
-// }
-
-// numReviews++;
-
-// localStorage.setItem("numReviews-ls", numReviews);
-
-
-// function setChapterList() {
-//     localStorage.setItem("chaptersArray", JSON.stringify(chaptersArray));
-// }
-
-// function getChapterList() {
-//     return JSON.parse(localStorage.getItem("chaptersArray"));
-// }
-
-// function deleteChapter(chapter) {
-//     chapter = chapter.slice(0, chapter.length - 1);
-//     chaptersArray = chaptersArray.filter(item => item !== chapter);
-//     setChapterList();
-// }
