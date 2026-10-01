@@ -158,10 +158,10 @@ img {
     text-decoration: none;
 } */
 
-.grid {
+/* .grid {
     grid-template-columns: repeat(auto-fill, minmax(275px 1fr));
     text-align: center;
-}
+} */
 
 .scenario {
     display: grid;
