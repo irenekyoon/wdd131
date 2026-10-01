@@ -140,7 +140,7 @@ h2 {
 
 #hero-purpose {
     display: block;
-    padding: 20px auto;
+    padding: 20px 0;
     /* max-width: 400px; */
     text-align: center;
     margin: 0 auto 8vh;
@@ -168,7 +168,7 @@ img {
     grid-template-columns: 400px 1fr;
     align-items: center;
     justify-items: center;
-    justify-content: space;
+    justify-content: space-around;
 
 }
 
