@@ -43,17 +43,4 @@ function listProducts(product) {
     })
 };
 
-const displayReviews = document.querySelector(".reviews");
-let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
-
-if (numReviews == 0) {
-    displayReviews.textContent = `This is your first review!`;
-
-} else {
-    displayReviews.textContent = ` You've completed ${numReviews} reviews!`;
-}
-
-numVisits++;
-
-localStorage.setItem("numReviews-ls", numReviews);
 

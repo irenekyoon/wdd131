@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Home page for A Seoul Temple Life, a site for my photos and illustrations of the Seoul Korea Temple of the Church of Jesus Christ of Latter-day Saints">
+    <meta name="author" content="Sunyoung Irene Yoon">
+    <title>Home | A Seoul Temple Life</title>
+    <link rel="stylesheet" href="styles/life-base.css">
+    <link rel="stylesheet" href="styles/life-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet">
+
+
+    <script src="scripts/life.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo-100.webp" alt="A Seoul Temple Life logo">
+            <p>A Seoul Temple Life</p>
+        </div>
+        <button aria-label="menu button" id="hamburger"></button>
+        <nav>
+            <ul>
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="illustrations.html">Illustrations</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id="hero">
+            <picture>
+                <source class="hero-lrg" srcset="images/hero-lrg.webp" media="(min-width:1000px)">
+                <source class="hero-lrg" srcset="images/hero-med.webp" media="(min-width:500px)">
+                <img src="images/hero-sm.webp"
+                    alt="Seoul Korea Temple of the Church of Jesus Christ of Latter-day Saints" width="400">
+            </picture>
+        </div>
+        <p id="hero-purpose">Experience the Seoul Korea Temple through my art and photos and find practical
+            information such as
+            location
+            information and available amenities.</p>
+
+        <section class="scenarios">
+            <p>How to get to the Seoul Korea Temple?</p>
+            <p>What does Seoul Korea Temple look like year round?</p>
+
+        </section>
+
+    </main>
+    <footer>
+        <p id="currentYear"></p>
+        <p id="lastModified">Last modified:</p>
+
+    </footer>
+
+</body>
+
+</html>
