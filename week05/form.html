@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/form-large.css">
     <script src="scripts/form.js" defer></script>
-    <script src="scripts/review.js" defer></script>
 </head>
 
 <body>
@@ -34,7 +33,6 @@
                 <label>&star; &star; &star;<input type="radio" id="stars" name="stars" value="3" required></label>
                 <label>&star; &star;<input type="radio" id="stars" name="stars" value="2" required></label>
                 <label>&star;<input type="radio" id="stars" name="stars" value="1" required></label>
-
             </div>
 
             <label>Date<input type="date" id="date" name="date" required>
@@ -46,14 +44,12 @@
                 <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
                 <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes">Ease of Use</label>
                 <label><input type="checkbox" id="performance" name="process" value="yes">Performance</label>
-
             </div>
 
-            <label class="description">Written Review (Optional)<input type="textarea" name="writtenReview"></label>
-            <label class="description">Your Name (Optional)<input type="text" name="name"></label>
+            <label class="optionalWritten"></label>
+            <label class="optionalYourName"></label>
 
             <input class="submit" type="submit" value="Post Review">
-
         </form>
     </main>
     <footer>

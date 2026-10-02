@@ -36,11 +36,14 @@ function listProducts(product) {
     const select = document.querySelector("#productName");
     product.forEach(product => {
         let option = document.createElement("option");
-        option.textContent = product.name;
-        option.setAttribute("value", "product.name");
+        option.textContent = `${product.name}`;
+        option.setAttribute("value", product.name);
         select.appendChild(option);
         document.querySelector("#productName").append(option);
     })
 };
+const optionalWritten = document.querySelector(".optionalWritten");
+optionalWritten.innerHTML = `Written Review <span style="color:rgb(62, 60, 176)">(Optional)</span><input type="textarea" name="writtenReview">`;
 
-
+const optionalYourName = document.querySelector(".optionalYourName");
+optionalYourName.innerHTML = `Your Name <span style="color:rgb(62, 60, 176)">(Optional)</span><input type="text" name="name">`;

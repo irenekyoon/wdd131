@@ -43,7 +43,6 @@ footer {
 #pForm input[type="textarea"],
 #pForm select,
 .description {
-    /* font-size: 30px; */
     padding: 14px;
     width: 96%;
     margin: 4px;
@@ -65,8 +64,6 @@ footer {
 #pForm input[type="textarea"] {
     height: 200px;
     text-align: left;
-    /* margin: 5px;
-    padding: 5px; */
 }
 
 #flexStars {
@@ -80,7 +77,6 @@ footer {
 label {
     font-family: var(--font-Lucida);
     font-size: 20px;
-
 }
 
 label {
@@ -94,7 +90,10 @@ label {
 .submit {
     margin: 20px 0 0;
     padding: 0;
+}
 
+.optionalWritten {
+    margin-top: 5px;
 }
 
 .submit {
@@ -121,6 +120,12 @@ footer {
 .confirmation h1 {
     padding: 20px;
     margin: 20px 0;
+    color: rgb(var(--dark-color));
+}
+
+.confirmation p {
+    font-size: 20px;
+    padding: 20px;
 }
 
 .reviews {
