@@ -42,6 +42,26 @@ function listProducts(product) {
         document.querySelector("#productName").append(option);
     })
 };
+
+const fiveStar = document.querySelector("#fiveStar");
+fiveStar.innerHTML = `&star; &star; &star; &star;
+                    &star;<input type="radio" id="stars" name="stars" value="5" required>`;
+
+const fourStar = document.querySelector("#fourStar");
+fourStar.innerHTML = `&star;&star; &star;
+                    &star;<input type="radio" id="stars" name="stars" value="4" required>`;
+
+const threeStar = document.querySelector("#threeStar");
+threeStar.innerHTML = `&star; &star; &star;<input type="radio" id="stars" name="stars" value="3"
+                        required>`;
+
+const twoStar = document.querySelector("#twoStar");
+twoStar.innerHTML = `&star; &star;<input type="radio" id="stars" name="stars" value="2" required>`;
+
+const oneStar = document.querySelector("#oneStar");
+oneStar.innerHTML = `&star; <input type="radio" id="stars" name="stars" value="1" required>`;
+
+
 const optionalWritten = document.querySelector(".optionalWritten");
 optionalWritten.innerHTML = `Written Review <span style="color:rgb(62, 60, 176)">(Optional)</span><input type="textarea" name="writtenReview">`;
 
