@@ -69,8 +69,9 @@ footer {
 #flexStars {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     max-width: 400px;
+    margin-left: 55px;
 }
 
 .description,
@@ -104,6 +105,9 @@ footer {
     padding: 10px 0;
 }
 
+.optional {
+    color: rgb(62, 60, 176);
+}
 
 /* Review Confirmation */
 .confirmation {

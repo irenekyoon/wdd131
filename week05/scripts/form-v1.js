@@ -59,7 +59,7 @@ const twoStar = document.querySelector("#twoStar");
 twoStar.innerHTML = `&star; &star;<input type="radio" id="stars" name="stars" value="2" required>`;
 
 const oneStar = document.querySelector("#oneStar");
-oneStar.innerHTML = `&star; <input type="radio" id="stars" name="stars" value="1" required>`;
+oneStar.innerHTML = `"" &star; <input type="radio" id="stars" name="stars" value="1" required>`;
 
 
 const optionalWritten = document.querySelector(".optionalWritten");

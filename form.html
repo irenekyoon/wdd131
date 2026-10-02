@@ -26,11 +26,11 @@
 
             <div class="description">Overall Rating</div>
             <div id="flexStars">
-                <label id="fiveStar"></label>
-                <label id="fourStar"></label>
-                <label id="threeStar"></label>
-                <label id="twoStar"></label>
-                <label id="oneStar"></label>
+                <label>⭐⭐⭐⭐⭐<input type="radio" id="fiveStar" name="stars" value="5" required></label>
+                <label>⭐⭐⭐⭐<input type="radio" id="fourStar" name="stars" value="4" required></label>
+                <label>⭐⭐⭐<input type="radio" id="threeStar" name="stars" value="3" required></label>
+                <label>⭐⭐<input type="radio" id="twoStar" name="stars" value="2" required></label>
+                <label>⭐<input type="radio" id="oneStar" name="stars" value="1" required></label>
             </div>
 
             <label>Date<input type="date" id="date" name="date" required>
@@ -38,14 +38,16 @@
 
             <div class="description">Useful Features</div>
             <div id="features">
-                <label><input type="checkbox" id="design" name="client" value="yes">Design</label>
+                <label for="features"><input type="checkbox" id="design" name="design" value="yes">Design</label>
                 <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
                 <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes">Ease of Use</label>
-                <label><input type="checkbox" id="performance" name="process" value="yes">Performance</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
             </div>
 
-            <label class="optionalWritten"></label>
-            <label class="optionalYourName"></label>
+            <label>Written Review <span class="optional">(Optional)</span><input type="textarea"
+                    name="writtenReview"></label>
+            <label>Your Name <span class="optional">(Optional)</span><input type="text" name="name"></label>
+
 
             <input class="submit" type="submit" value="Post Review">
         </form>
