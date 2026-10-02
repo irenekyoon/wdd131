@@ -18,37 +18,38 @@
     </header>
     <main>
         <form method="get" action="review.html" id="pForm">
-            <label>Product Name
+            <label for="productName">Product Name
                 <select class="required" name="productName" id="productName" required>
                     <option value="" selected disabled>Select a Product...</option>
                 </select>
             </label>
-<input type="radio" id="general-inquiry" name=message-purpose>
-<label for="general-inquiry">General Inquiry</label>
 
             <div class="description">Overall Rating</div>
             <div id="flexStars">
-                <label for="fiveStar" >⭐⭐⭐⭐⭐<input type="radio" id="fiveStar" name="stars" value="5" required></label>
-                <label for="fourStar">⭐⭐⭐⭐<input type="radio" id="fourStar" name="stars" value="4" required></label>
-                <label for="threeStar">⭐⭐⭐<input type="radio" id="threeStar" name="stars" value="3" required></label>
-                <label for="twoStar">⭐⭐<input type="radio" id="twoStar" name="stars" value="2" required></label>
-                <label for="oneStar">⭐<input type="radio" id="oneStar" name="stars" value="1" required></label>
+                <label for="fiveStar">⭐⭐⭐⭐⭐</label><input type="radio" id="fiveStar" name="stars" value="5" required>
+                <label for="fourStar">⭐⭐⭐⭐</label><input type="radio" id="fourStar" name="stars" value="4" required>
+                <label for="threeStar">⭐⭐⭐</label><input type="radio" id="threeStar" name="stars" value="3" required>
+                <label for="twoStar">⭐⭐</label><input type="radio" id="twoStar" name="stars" value="2" required>
+                <label for="oneStar">⭐</label><input type="radio" id="oneStar" name="stars" value="1" required>
             </div>
 
-            <label>Date<input type="date" id="date" name="date" required>
+            <label for="date">Date<input type="date" id="date" name="date" required>
             </label>
 
             <div class="description">Useful Features</div>
             <div id="features">
-                <label for="design"><input type="checkbox" id="design" name="design" value="yes">Design</label>
-                <label for="durability"><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
-                <label for="easeOfUse"><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes">Ease of Use</label>
-                <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                <input type="checkbox" id="design" name="design" value="yes"><label for="design">Design</label>
+                <input type="checkbox" id="durability" name="durability" value="yes"><label
+                    for="durability">Durability</label>
+                <input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes"><label for="easeOfUse">Ease of
+                    Use</label>
+                <input type="checkbox" id="performance" name="performance" value="yes"><label
+                    for="performance">Performance</label>
             </div>
 
-            <label>Written Review <span class="optional">(Optional)</span></label>
+            <label for="message">Written Review <span class="optional">(Optional)</span></label>
             <textarea name="message" id="message"></textarea>
-            <label>Your Name <span class="optional">(Optional)</span>
+            <label for="name">Your Name <span class="optional">(Optional)</span>
                 <input type="text" name="name"></label>
 
 
