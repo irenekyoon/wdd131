@@ -26,11 +26,11 @@
 
             <div class="description">Overall Rating</div>
             <div id="flexStars">
-                <label for="fiveStar">⭐⭐⭐⭐⭐</label><input type="radio" id="fiveStar" name="stars" value="5" required>
-                <label for="fourStar">⭐⭐⭐⭐</label><input type="radio" id="fourStar" name="stars" value="4" required>
-                <label for="threeStar">⭐⭐⭐</label><input type="radio" id="threeStar" name="stars" value="3" required>
-                <label for="twoStar">⭐⭐</label><input type="radio" id="twoStar" name="stars" value="2" required>
-                <label for="oneStar">⭐</label><input type="radio" id="oneStar" name="stars" value="1" required>
+                <input type="radio" id="fiveStar" name="stars" value="5" required><label for="fiveStar">⭐⭐⭐⭐⭐</label>
+                <input type="radio" id="fourStar" name="stars" value="4" required><label for="fourStar">⭐⭐⭐⭐</label>
+                <input type="radio" id="threeStar" name="stars" value="3" required><label for="threeStar">⭐⭐⭐</label>
+                <input type="radio" id="twoStar" name="stars" value="2" required><label for="twoStar">⭐⭐</label>
+                <input type="radio" id="oneStar" name="stars" value="1" required><label for="oneStar">⭐</label>
             </div>
 
             <label for="date">Date<input type="date" id="date" name="date" required>
@@ -48,9 +48,9 @@
             </div>
 
             <label for="message">Written Review <span class="optional">(Optional)</span></label>
-            <textarea name="message" id="message"></textarea>
+            <textarea name="message" id="message" placeholder="Type here" rows="4"></textarea>></textarea>
             <label for="name">Your Name <span class="optional">(Optional)</span>
-                <input type="text" name="name"></label>
+                <input type="text" id="name" name="name"></label>
 
 
             <input type="submit" value="Post Review" class="submit">

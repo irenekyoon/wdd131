@@ -66,12 +66,32 @@ footer {
     text-align: left;
 }
 
+
+
 #flexStars {
     display: flex;
     flex-direction: row-reverse;
-    /* justify-content: flex-start; */
+
     max-width: 400px;
-    margin-left: 55px;
+    margin-left: 130px;
+}
+
+.description label {
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+.description {
+    text-align: left;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    justify-content: flex-start;
+
 }
 
 .description,
