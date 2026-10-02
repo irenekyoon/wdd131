@@ -1,0 +1,135 @@
+:root {
+    --dark-color: 8, 6, 100;
+    --med-color: 240, 255, 100;
+    --light-color: 200, 200, 200;
+    --white: 222, 222, 222;
+    --font-Lucida: 'Lucida Sans Unicode';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px 0;
+}
+
+header,
+footer {
+    background-color: rgb(var(--dark-color));
+    text-align: center;
+}
+
+h1,
+footer {
+    color: rgb(var(--white));
+    font-family: var(--font-Lucida);
+}
+
+#pForm {
+    background-color: rgb(var(--med-color), .2);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 30px 0;
+    text-align: left;
+}
+
+#pform input[type="submit"],
+#pForm input[type="text"],
+#pForm input[type="date"],
+#pForm input[type="textarea"],
+#pForm select,
+.description {
+    padding: 14px;
+    width: 96%;
+    margin: 4px;
+    font-size: 20px;
+}
+
+#pForm input[type="radio"] {
+    width: 96%;
+}
+
+#pForm input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+#pForm select {
+    margin: 0 15px;
+}
+
+#pForm input[type="textarea"] {
+    height: 200px;
+    text-align: left;
+}
+
+#flexStars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    max-width: 400px;
+}
+
+.description,
+label {
+    font-family: var(--font-Lucida);
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.description,
+.submit {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.optionalWritten {
+    margin-top: 5px;
+}
+
+.submit {
+    font-size: 30px;
+}
+
+footer {
+    padding: 10px 0;
+}
+
+
+/* Review Confirmation */
+.confirmation {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 50vh;
+
+    border: 2px solid grey;
+    background-color: rgb(var(--med-color), .2);
+}
+
+.confirmation h1 {
+    padding: 20px;
+    margin: 20px 0;
+    color: rgb(var(--dark-color));
+}
+
+.confirmation p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.reviews {
+    display: inline;
+    padding: 50px;
+    border: 3px solid navy;
+}

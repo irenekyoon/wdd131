@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 | Product Review Form</title>
+    <meta name="description" content="WDD131 | Week 05: An example of a product review form for different widgets.">
+    <meta name="author" content="Sunyoung Irene Yoon">
+    <link rel="stylesheet" href="styles/form-v1.css">
+    <link rel="stylesheet" href="styles/form-large-v1.css">
+    <script src="scripts/form-v1.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" id="pForm">
+            <label>Product Name
+                <select class="required" name="productName" id="productName" required>
+                    <option value="" selected disabled>Select a Product...</option>
+                </select>
+            </label>
+
+            <div class="description">Overall Rating</div>
+            <div id="flexStars">
+                <label id="fiveStar"></label>
+                <label id="fourStar"></label>
+                <label id="threeStar"></label>
+                <label id="twoStar"></label>
+                <label id="oneStar"></label>
+            </div>
+
+            <label>Date<input type="date" id="date" name="date" required>
+            </label>
+
+            <div class="description">Useful Features</div>
+            <div id="features">
+                <label><input type="checkbox" id="design" name="client" value="yes">Design</label>
+                <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="process" value="yes">Performance</label>
+            </div>
+
+            <label class="optionalWritten"></label>
+            <label class="optionalYourName"></label>
+
+            <input class="submit" type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p id="contentYear"></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
