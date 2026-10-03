@@ -1,6 +1,6 @@
 :root {
     --dark-color: 8, 6, 100;
-    --med-color: 240, 255, 100;
+    --med-color: 250, 255, 100;
     --light-color: 200, 200, 200;
     --white: 222, 222, 222;
     --font-Lucida: 'Lucida Sans Unicode';
@@ -29,12 +29,13 @@ footer {
 }
 
 #pForm {
-    background-color: rgb(var(--med-color), .2);
+    background-color: rgb(var(--med-color), .1);
     display: flex;
     flex-direction: column;
     padding: 15px;
     margin: 30px 0;
     text-align: left;
+    border: thin solid rgb(var(--dark-color), .5);
 }
 
 #pform input[type="submit"],
@@ -69,19 +70,33 @@ footer {
 
 
 #flexStars {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px 1fr));
+    justify-content: flex-start;
+    /* display: flex;
     flex-direction: row-reverse;
-
     max-width: 400px;
-    margin-left: 130px;
+    margin-left: 130px; */
+    padding-bottom: 12px;
+}
+
+flexStar label {
+    grid-row: 1/2;
+}
+
+#fiveStar,
+#fourStar,
+#threeStar,
+#twoStar,
+#oneStar {
+    grid-row: 2/3;
+    text-align: center;
 }
 
 .description label {
     display: block;
     margin: 0 auto;
-
 }
-
 
 .description {
     text-align: left;
@@ -91,7 +106,6 @@ footer {
     display: grid;
     grid-template-columns: 30px 1fr;
     justify-content: flex-start;
-
 }
 
 .description,
@@ -113,8 +127,13 @@ label {
     padding: 0;
 }
 
-.optionalWritten {
-    margin-top: 5px;
+.optional {
+    margin-top: 10px;
+    color: rgb(49, 72, 249);
+}
+
+.writtenName {
+    margin-top: 7px;
 }
 
 .submit {
@@ -125,9 +144,6 @@ footer {
     padding: 10px 0;
 }
 
-.optional {
-    color: rgb(62, 60, 176);
-}
 
 /* Review Confirmation */
 .confirmation {
