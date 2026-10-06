@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Photos | A Seoul Temple Life, a site for my photos and illustrations of the Seoul Korea Temple of the Church of Jesus Christ of Latter-day Saints">
+        content="Home page for A Seoul Temple Life, a site for my photos and illustrations of the Seoul Korea Temple of the Church of Jesus Christ of Latter-day Saints">
     <meta name="author" content="Sunyoung Irene Yoon">
     <title>Home | A Seoul Temple Life</title>
     <link rel="stylesheet" href="styles/life-base.css">
     <link rel="stylesheet" href="styles/life-large.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
         rel="stylesheet">
-
-
-    <script src="scripts/photos.js" defer></script>
+    <script src="scripts/life.js" defer></script>
 
 </head>
 
@@ -40,25 +39,33 @@
 
     </header>
     <main>
-        <h1>Photos</h1>
-        <div class="season">
-            <h2>Filter by Season</h2>
-            <a href="#" id="spring">Spring</a>
-            <a href="#" id="summer">Summer</a>
-            <a href="#" id="autumn">Autumn</a>
-            <a href="#" id="winter">Winter</a>
+        <section class="hero">
+            <h1 id="hero-purpose">Experience the Seoul Korea Temple through my photos and art and find info about how
+                to get to the temple.</h1>
 
-        </div>
+            <img id="hero" src="images/hero-med.webp"
+                alt="Seoul Korea Temple of the Church of Jesus Christ of Latter-day Saints" width="500">
 
-        <div id="grid">
 
-        </div>
+        </section>
+
+        <section class="scenario">
+            <div id="scenario1">
+                <h2>Discover the seasons...</h2>
+                <p>What does Seoul Korea Temple look like year round?</p>
+            </div>
+
+            <div id="scenario2">
+                <h2>Explore my art...</h2>
+                <p>How I express temple and family history doctrine.</p>
+            </div>
+        </section>
+
 
     </main>
     <footer>
         <p id="currentYear"></p>
         <p id="lastModified">Last modified:</p>
-
     </footer>
 
 </body>

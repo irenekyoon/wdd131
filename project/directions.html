@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Directions | A Seoul Temple Life, directions to the Seoul Korea Temple of the Church of Jesus Christ of Latter-day Saints and subscription option">
+    <meta name="author" content="Sunyoung Irene Yoon">
+    <title>Directions | A Seoul Temple Life</title>
+    <link rel="stylesheet" href="styles/life-base.css">
+    <link rel="stylesheet" href="styles/life-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet">
+
+
+    <script src="scripts/directions.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo-100.webp" alt="A Seoul Temple Life logo">
+            <p>A Seoul Temple Life</p>
+        </div>
+        <button aria-label="menu button" id="hamburger"></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="illustrations.html">Illustrations</a></li>
+                <li><a href="directions.html">Directions</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="directions">
+            <h1>Directions</h1>
+            <h2>Temple Address and Contact Number</h2>
+            <p id="address"></p>
+            <p id="phone"></p>
+
+            <h2>Directions from Sinchon Station</h2>
+            <p id="subway"></p>
+            <p>At Sinchon Station, take exit 1.
+            <p>Go straight, along Sinchon-ro.</p>
+            <p>Turn right at Sinchon-ro 7-gil.</p>
+            <p>Keep going straight, up the steep hill.</p>
+            <p>The temple will be on your left.</p>
+
+            <h3>This video shows the route to the temple:</h3>
+            <p><a href="https://youtu.be/Gkq5N2uaNXU?si=XIMXC7k06YO_s1Zz">Morning Walk to Seoul Korea Temple</a></p>
+            
+         
+        </section>
+        <section class="subscription-form">
+            <h2>Subscribe</h2>
+            <form method="get" action="confirm.html">
+
+
+                <div class="subscribe">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes" required><label
+                        for="newsletter">Please
+                        subscribe me to your newsletter</label>
+                </div>
+                <label for="fname">First Name*<input type="text" id="fname" name="fname" required></label>
+                <label for="lname">Last Name*<input type="text" id="lname" name="lname" required></label>
+                <label for="email">Email*<input type="email" id="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+
+                <div class="more-info">
+                    <p>I would like more information <span class="optional"></span>(Optional):</p>
+                    <div class="info">
+                        <input type="radio" id="art" name="art" value="yes"><label for="art">Art</label>
+                        <input type="radio" id="photos" name="photos" value="yes"><label for="photos">Photos</label>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <label id="message" for="message"><span class="optional">Message (Optional)</span></label>
+                    <textarea name="message" id="message" rows="4" placeholder="Type message here"></textarea>
+                </div>
+
+                <input type="submit" value="Subscribe" class="submit">
+            </form>
+        </section>
+        <section class="stats">
+            <h3 class="visits">Visits: </h3>
+        </section>
+
+    </main>
+    <footer>
+        <p id="currentYear"></p>
+        <p id="lastModified">Last modified:</p>
+
+    </footer>
+
+</body>
+
+</html>

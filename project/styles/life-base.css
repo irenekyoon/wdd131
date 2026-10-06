@@ -1,11 +1,11 @@
 :root {
-    --main-font-family: "Noto Sans KR";
-    --secondary-font-family: "Noto Serif KR";
+
     --orange-yellow: 255, 171, 0;
     --ivory: 222, 222, 222;
     --brown: 93, 65, 24;
     --black: 64, 46, 50;
-
+    --main-font-family: "Noto Sans KR", sans-serif;
+    --secondary-font-family: "Noto Serif KR", serif;
 }
 
 * {
@@ -14,10 +14,11 @@
     box-sizing: border-box;
 }
 
+
 header,
 main,
 footer {
-    /* max-width: 900px; */
+
     margin: 0 auto;
 }
 
@@ -34,6 +35,7 @@ header {
     margin-bottom: 5px;
     padding: 20px 100px 20px 20px;
     border-bottom: 5px solid rgb(var(--brown), 3);
+
 }
 
 .logo {
@@ -87,16 +89,26 @@ nav ul li {
 
 }
 
-nav a {
-    text-align: center;
+nav a,
+.season a {
     font-family: var(--main-font-family);
     font-size: 1rem;
     text-decoration: none;
-
     color: rgb(var(--black));
+
 }
 
-nav a:hover {
+nav a {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.season a {
+    padding: 10px 5px;
+}
+
+nav a:hover,
+.season a:hover {
     color: rgb(var(--orange-yellow));
 }
 
@@ -128,68 +140,224 @@ h1 {
 
 h2 {
     padding: 7px;
-    font-size: 15px;
+    font-size: 20px;
     font-family: var(--secondary-font-family);
     background-color: rgb(var(--alt-pink), .7);
 }
 
-/* #hero {
-    margin: 12vh auto 20px;
+
+.hero {
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 90%;
+}
+
+#hero {
+    display: block;
+    padding: 5px;
+    border-radius: 50%;
+    border: 3px, solid, rgb(var(--orange-yellow), .3);
+    box-shadow: 3px 1px 30px rgb(var(--shadow), .5);
+    align-items: center;
+    margin: 0 auto;
     text-align: center;
-} */
+    width: 100%;
+    height: auto;
+}
+
 
 #hero-purpose {
     display: block;
     padding: 20px 0;
-    /* max-width: 400px; */
+    font-size: .8rem;
     text-align: center;
-    margin: 0 auto 8vh;
-    font-family: var(--secondary-font-family);
-
-}
-
-img {
-    width: 90%;
-    height: auto;
-
-}
-
-/* figcaption a {
-    text-decoration: none;
-} */
-
-/* .grid {
-    grid-template-columns: repeat(auto-fill, minmax(275px 1fr));
-    text-align: center;
-} */
-
-.scenario {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-around;
-
-}
-
-.scenario div {
-
-    margin: 0 100px 0 auto;
-    padding: 0 50px;
-    border: 2px solid rgb(var(--orange-yellow), .5);
-    border-radius: 6px;
-    background-color: rgb(var(--ivory), .2);
+    margin: 0 auto;
     font-family: var(--main-font-family);
 
 }
 
-.scenario p {
-    max-width: 400px;
+#grid,
+#illustration-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#grid,
+#illustration-grid {
     margin: 0 auto;
+    display: grid;
+    grid-gap: 15px;
+    text-align: center;
+    border-radius: 3px;
+
+    border: 2px solid rgb(var(--orange-yellow), .2);
+    border-radius: 6px;
+    background-color: rgb(var(--ivory), .3);
+    font-family: var(--secondary-font-family);
+    justify-content: space-around;
+    justify-items: center;
+}
+
+#grid section,
+#illustration-grid section {
+    background: rgb(var(--ivory), .6);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#grid section,
+#illustration-grid section {
+    max-width: 300px;
+}
+
+#grid img,
+#illustration-grid img {
+    width: 275px;
+    height: auto;
+}
+
+.season {
+    margin: 0 auto;
+    max-width: 1500px;
+
+}
+
+.season h2 {
+    text-align: left;
+}
+
+
+.scenario {
+    display: flex;
+    flex-direction: column;
+}
+
+.scenario h2 {
+    font-size: .6rem;
+    font-family: var(--secondary-font-family);
+}
+
+#scenario1,
+#scenario2 {
+    border: 2px solid rgb(var(--orange-yellow), .2);
+    border-radius: 6px;
+    background-color: rgb(var(--ivory), .3);
+    font-family: var(--secondary-font-family);
+    max-width: 340px;
+    margin: 0 auto 5px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.visits {
+    text-align: right;
+    margin-right: 100px;
+    font-weight: 300;
 }
 
 footer {
     margin-top: 17px;
     padding: 10px 0;
     border-top: 2px solid rgb(var(--brown), 3);
+}
+
+/* About and Confirm page */
+
+#directions,
+.subscription-form,
+.stats,
+.confirm {
+    max-width: 800px;
+    margin: 10px auto;
+    border: 2px solid rgb(var(--orange-yellow), .2);
+    background-color: rgb(var(--ivory), .2);
+    border-radius: 6px;
+    font-family: var(--secondary-font-family);
+
+}
+
+#directions,
+.subscription-form {
+    padding: 25px;
+
+}
+
+.confirm {
+    padding: 200px;
+}
+
+.confirm p {
+    padding: 20px;
+    text-align: center;
+}
+
+#directions h2,
+#directions h3 {
+    padding-top: 15px;
+}
+
+
+label {
+    font-family: var(--main-font-family);
+    margin: 20px 0 3px 0;
+    padding-top: 16px;
+}
+
+form {
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+form input[type="text"],
+form input[type="email"] {
+    display: flex;
+    padding: 14px;
+    margin: 2px 0 10px 0;
+    background-color: rgb(var(--ivory), .8);
+    display: block;
+    border: thin solid rgb(var(--brown), .2);
+    width: 100%;
+    max-width: 800px;
+    appearance: none;
+}
+
+.subscribe,
+.feedback {
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+
+.more-info {
+    padding: 25px 15px 0 0;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+#art,
+#photos {
+    margin: 10px;
+}
+
+#info label {
+    padding: 10px;
+}
+
+form input[type="radio"] {
+    padding: 10px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    margin: 15px;
+    font-size: 20px;
 }
