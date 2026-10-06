@@ -36,11 +36,18 @@ const drawings = [
         alt: "A Joseon era family awaits their proxy ordinances at the Seoul Korea Temple of the Church of Jesus Christ of Latter-day Saints",
     },
     {
+        title: "Praise ye the Lord",
+        location: "East",
+        imgLocation: "images/music.webp",
+        alt: "Illustration of Joseon era couple at the main entrance of the Seoul Korea Temple of the Church of Jesus Christ of Latter-day Saints"
+    },
+    {
         title: "A Joseon Divine Daughter",
         location: "East",
         imgLocation: "images/sorrow.webp",
         alt: "Drawing of a Joseon era young woman weeps on the grassy plateau outside the Seoul Korea Temple of the Church of Jesus Christ of Latter- day Saints",
     },
+
     {
         title: "Think Celestial!",
         location: "East, South, West",
