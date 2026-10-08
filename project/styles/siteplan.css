@@ -1,0 +1,98 @@
+:root {
+
+    --orange-yellow: 255, 171, 0;
+    --ivory: 222, 222, 222;
+    --brown: 93, 65, 24;
+    --black: 64, 46, 50;
+    --main-font-family: "Noto Sans KR", sans-serif;
+    --secondary-font-family: "Noto Serif KR", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px, 0;
+    margin-bottom: 5px;
+    border-bottom: 5px solid rgb(var(--brown), 3);
+}
+
+div {
+    padding: 10px;
+    margin: 10px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--main-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: rgb(var(--black));
+}
+
+h2 {
+    background-color: rgb(var(--ivory));
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--main-font-family);
+}
+
+p {
+    text-align: left;
+    font-family: var(--secondary-font-family);
+    padding: 15px 5px 10px;
+}
+
+h3 {
+    text-align: left;
+    padding: 10px 5px 2px;
+}
+
+#logo {
+    text-align: left;
+}
+
+#yellow {
+    padding: 5px;
+    margin: 5px;
+    color: rgb(var(--black));
+    background-color: rgb(var(--ivory));
+}
+
+#yellow:hover {
+    color: rgb(var(--orange-yellow));
+}
+
+#yellow-p {
+    max-width: 400px;
+
+    padding: 10px;
+    border: 2px solid rgb(var(--orange-yellow), .2);
+}
+
+#scenario-ex {
+    background-color: rgb(var(--brown), .8);
+    color: rgb(var(--ivory));
+    padding: 10px;
+
+}

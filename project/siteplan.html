@@ -5,73 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Home page for A Seoul Temple Life, a site for my photos and illustrations of the Seoul Korea Temple of the Church of Jesus Christ of Latter-day Saints">
+        content="Siteplan for A Seoul Temple Life, a site for my photos and illustrations of the Seoul Korea Temple of the Church of Jesus Christ of Latter-day Saints">
     <meta name="author" content="Sunyoung Irene Yoon">
-    <title>Home | A Seoul Temple Life</title>
-    <link rel="stylesheet" href="styles/life-base.css">
-    <link rel="stylesheet" href="styles/life-large.css">
+    <title>WDD131 | Siteplan Document</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
         rel="stylesheet">
-
-
-    <script src="scripts/life.js" defer></script>
-
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="images/logo-100.webp" alt="A Seoul Temple Life logo">
-            <p>A Seoul Temple Life</p>
-        </div>
-        <button aria-label="menu button" id="hamburger"></button>
-        <nav>
-            <ul>
-                <li><a href="siteplan.html">Home</a></li>
-                <li><a href="photos.html">Photos</a></li>
-                <li><a href="illustrations.html">Illustrations</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-
+        <h1>Content for my Week 06 Project</h1>
+        <p>Sunyoung Irene Yoon</p>
+        <p>Instructor: Brother Castro</p>
     </header>
-    <main>
-        <h1>Home</h1>
-        <div id="hero">
-            <picture>
-                <source class="hero-lrg" srcset="images/hero-lrg.webp" media="(min-width:1000px)">
-                <source class="hero-lrg" srcset="images/hero-med.webp" media="(min-width:500px)">
-                <img src="images/hero-sm.webp"
-                    alt="Seoul Korea Temple of the Church of Jesus Christ of Latter-day Saints" width="400">
-            </picture>
-        </div>
-        <p id="hero-purpose">Experience the Seoul Korea Temple through my art and photos and find practical
-            information such as
-            location
-            information and available amenities.</p>
 
-        <section class="scenario">
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <h3>Seoul Temple Life</h3>
+            I chose this name because I wanted it to be a short, personal name related to the Seoul Korea Temple and
+            at the same
+            time, not to create any confusion with official church sites.
+            </h>
+            <div id="logo">
+                <h4>Site Logo</h4>
+                <img src=" images/logo-100.webp" alt="A Seoul Life Logo">
+            </div>
+        </section>
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The purpose of my site is to invite users to experience the Seoul Korea Temple through my art and photos
+                and provide directions to get to the temple.</p>
+        </section>
+        <section>
+            <h2>Scenarios</h2>
+            <p>How do I express temple and family history doctrine?</p>
+            <p>What does Seoul Korea Temple look like year round?</p>
+        </section>
+        <section>
+            <h2>Color Schema</h2>
+            <img src="images/color-schema.webp" alt="color schema for  A Seoul Temple Life">
             <div>
-                <h2>Scenario 1</h2>
-                <p>How to get to the Seoul Korea Temple?</p>
+                <h3>orange-yellow: rgb(255, 171, 0) #ffab00</h3>
+                <p>I use this for the logo, hovered buttons and border on the scenarios</p>
+                <p>Here is an example of a <span id=yellow>button</span> when hovered</p>
+                <p id="yellow-p">Here is an example of using it as a border</p>
             </div>
             <div>
-                <h2>Scenario 2</h2>
-                <p>What does Seoul Korea Temple look like year round?</p>
+                <h3>ivory: rgb(222, 222, 222) #dedede</h3>
+                <p>This is for the header, footer, and scenario background</p>
+                <p>The h2 elements in this document use this color for the background color</p>
+            </div>
+            <div>
+                <h3>brown: rgb(93, 65, 24) #5d4118</h3>
+                <p>
+                    This color is an accent border color on the bottom of the header and top of the footer, and
+                    background color on the purpose element for large screen view</p>
+                <p>The border at the bottom of the header on this document uses this color</p>
+                <p>Here is an example of how it's used on the <span id=scenario-ex>scenario</span></p>
+            </div>
+            <div>
+                <h3>brown/black: rgb(64, 46, 50) #402e32</h3>
+                <p>I use this as font color</p>
+                <p>The headers and paragraph elements on this document use this color</p>
             </div>
 
         </section>
-
+        <section>
+            <h2>Typography</h2>
+            <div>
+                <h3>Noto Sans Korean</h3>
+                <p>This font is for the nav, h1, purpose and form labels</p>
+                <p>The headers in this document use Noto Sans Korean</p>
+            </div>
+            <div>
+                <h3>Noto Serif Korean</h3>
+                <p>I use this font as a secondary font. It is for the header and footer, h2, and text for the scenarios,
+                    grids, form and paragraphs
+                    on the
+                    Directions page</p>
+                <p>The paragraph text on this page use the Noto Serif Korean font</p>
+            </div>
+        </section>
+        <section>
+            <h2>Wireframes</h2>
+            <div>
+                <p>This is the home page layout for mobile screens</p>
+                <img src="images/wireframe-sm-screen.webp" alt="wireframe for small screens">
+            </div>
+            <div>
+                <p>This is layout for desktop view</p>
+                <img src="images/wireframe-lrg-screen.webp" alt="wireframe for large screens">
+            </div>
+        </section>
     </main>
-    <footer>
-        <p id="currentYear"></p>
-        <p id="lastModified">Last modified:</p>
-
-    </footer>
-
 </body>
 
 </html>
