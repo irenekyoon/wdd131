@@ -54,8 +54,8 @@
     #scenario2 {
         position: absolute;
         font-size: 1.4rem;
-        background-color: rgb(var(--brown), .8);
-        color: rgb(var(--ivory));
+        background-color: rgb(var(--brown));
+        color: white;
 
     }
 
